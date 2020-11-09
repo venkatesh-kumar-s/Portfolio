@@ -1,0 +1,46 @@
+.bottom-banner img{
+  position: fixed;
+  object-fit: contain;
+}
+.react{
+    width: 15rem;
+    right: -7%;
+    bottom: -8%;
+}
+.mongodb{
+  width: 15rem;
+  left: -4%;
+  top: 50%;
+  transform: rotate(30deg);
+}
+.express{
+  width: 10rem;
+  left: 2%;
+  top: 30%;
+  transform: rotate(-30deg);
+}
+.node{
+  width: 10rem;
+  right: 2%;
+  top: 30%;
+  transform: rotate(-30deg);
+}
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media (max-width: 955px){
+    .react,.mongodb,.express,.node{
+      display: none;
+    }
+  }

@@ -1,38 +1,34 @@
 .App {
   text-align: center;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-toggler{
+  outline: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/*dark mode & light mode */
+.light-mode{
+  background-color: #caf0f8;
+  color: black;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.light-mode .first-name{color: orange;}
+.light-mode .last-name{color: black;}
+.light-mode nav{background-color: #90e0ef; height: max-content;}
+.light-mode .nav-link,.light-mode .navbar-brand{color: black;}
+
+.dark-mode{
+  background-color: #0b0b0d;
   color: white;
+  min-height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.dark-mode .first-name{color: white;}
+.dark-mode .last-name{color: orange;}
+.dark-mode p,.dark-mode i{color:white;}
+.dark-mode hr{box-shadow: 0px 1px 1px -0.025px white;}
+.dark-mode nav{background-color: black;}
+.dark-mode .nav-link,.dark-mode .navbar-brand{color: white;}
+.dark-mode .theme-toggle{color: white;border:auto solid white;}
+.dark-mode .theme-toggle:hover{color: black;border:auto solid white;background-color: white;}
+.dark-mode .navbar-toggler-icon{background-color: white;}

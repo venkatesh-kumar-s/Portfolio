@@ -1,0 +1,11 @@
+.preferred h4{
+    font-size: x-large;
+    font-weight: 450;
+}
+.suggestions a,i{
+    font-size: medium;
+}
+.suggestions a{
+    margin: 10px;
+    font-weight: 450;
+}

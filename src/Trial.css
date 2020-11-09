@@ -1,0 +1,9 @@
+.glass-effect{
+    background:linear-gradient(to right,#a8c0ff,#40E0D0);
+    color: #ffffff;
+    width: 400px;
+    height: 200px;
+    border-radius: 30px;
+    opacity: 60%;
+    filter: blur(50);
+}

@@ -1,0 +1,17 @@
+.card img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.card{
+    text-align: left;
+    border-radius: 10px;
+    
+}
+.card span{
+    color: gray;
+}
+.card p{
+    font-weight: 400;
+    font-size: medium;
+}

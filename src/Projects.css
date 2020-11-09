@@ -1,0 +1,26 @@
+.project{
+    font-size: xx-large;
+    font-weight: 450;
+}
+p span{
+    font-size: medium;
+    font-weight: 450;
+}
+.label{
+    font-size: small;
+}
+.glass-effect{
+    background:linear-gradient(to right,#CFDEF300,#E0EAFC00,#CFDEF300);
+    color: #111111;;
+    width: 100%;
+    height: fit-content;
+    border-radius: 30px;
+    padding: 0.3rem;
+    border-bottom:1px solid grey;
+}
+.glass-effect img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5%;
+}

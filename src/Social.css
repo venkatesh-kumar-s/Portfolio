@@ -1,0 +1,9 @@
+.social-bar img{
+    object-fit: contain;
+    width: 3rem;
+    filter: drop-shadow(1px 1px 3px #111111);
+}
+.social-bar img:hover{
+    transform: scale(1.2);
+    transition: all 0.2s;
+}

@@ -1,0 +1,23 @@
+.intro img{
+    border-radius: 100%;
+}
+.skills h3{
+    color: #0278ae;
+}
+.skills p{
+    font-size: medium;
+    font-weight: 450;
+}
+.intro p{
+    font-size: medium;
+    font-weight: 400;
+    text-align: justify;
+}
+.light{
+    font-weight: 650;
+}
+.status{
+    border-left: 5px solid #0278ae;
+    border-radius: 10px;
+    background-color: #0278ae50;
+}

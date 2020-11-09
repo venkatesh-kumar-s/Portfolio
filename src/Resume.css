@@ -1,0 +1,38 @@
+.resume{
+    font-size: xx-large;
+    font-weight: 450;
+}
+.logo{
+    object-fit: contain;
+    width:5rem;
+}
+.edu-text span{
+    font-size: larger;
+    font-weight: 450;
+}
+.school img{
+    object-fit: contain;
+    width: 4rem;
+}
+.institute{
+    font-size: larger;
+    font-weight: 550;
+    margin: 10px;
+    padding-left: 8px;
+}
+.degree{
+    font-size: medium;
+    font-weight: 450;
+    margin: 10px;
+    float: left;
+}
+hr{
+    width: 100%;
+}
+i{
+    font-weight: 400;
+    color: grey;
+}
+li{
+    font-weight: 400;
+}
