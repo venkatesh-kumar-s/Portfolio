@@ -27,18 +27,18 @@ function Blog() {
             content:"Angular is a full-fledged framework, while React is a library. React. js uses virtual DOM and one-way data binding while Angular operates on real DOM & two-way data binding. There's also a difference in bundle size (React's smaller) and speed (React works a bit faster)."
         },
         {
-            avatar:"https://mindlercareerlibrarynew.imgix.net/1G-Computer_ScienceCsIT_Software_Engineering.png",
-            alt:"Software Engineering",
-            title:"The Software Engineering Learning Plan",
-            date:"26 April, 2020",
-            content:"Software engineering is the systematic application of engineering approaches to the development of software. Software engineering is a computing discipline."
+            avatar:"https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/168257270/original/f78696dbacb2929525009ef4f3380f8ebdee8bab/develop-mern-stack-application.jpg",
+            alt:"mern stack",
+            title:"Complete Guide to MERN Stack Developer",
+            date:"21 August, 2020",
+            content:"MERN stands for MongoDB, Express, React, Node, after the four key technologies that make up the stack. MongoDB - document database. Express(.js) - Node.js web framework. React(.js) - a client-side JavaScript framework. Node(.js) - the premier JavaScript web server."
         },
         {
-            avatar:"https://mindlercareerlibrarynew.imgix.net/1G-Computer_ScienceCsIT_Software_Engineering.png",
-            alt:"Software Engineering",
-            title:"The Software Engineering Learning Plan",
-            date:"26 April, 2020",
-            content:"Software engineering is the systematic application of engineering approaches to the development of software. Software engineering is a computing discipline."
+            avatar:"https://lh3.googleusercontent.com/iKHbqfOA22cBvWvdnGoi165ZxDy6lqWHDIrmDGORZU0NvNX_CgnexW8OgKmDVd5sQongQwCwsqsnu3SJCCPySlozJFYnJRE=s600",
+            alt:"mongo db",
+            title:"Why Mongo DB?",
+            date:"2 July, 2020",
+            content:"MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License."
         },
     ];
     const [state,setState]=useState(data);
