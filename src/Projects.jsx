@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Projects.css';
 import Helmet from 'react-helmet';
 
@@ -40,14 +40,24 @@ function Projects() {
             skills:[{info:'HTML5'}, {info:'CSS3'},{info:'Bootstrap4'},{info:'Javascript'}],
         },
     ]
+
+    const [state, setState]=useState(projectList);
+    const [search,setSearch]=useState('');
+    console.log(search);
+
+    const filteredResult=state.filter(project=>(
+        project.title.toLowerCase().indexOf(search)!==-1
+    ))
+
     return (
         <div className="container mt-5 text-left">
             <Helmet>
                 <title>Projects | Venkatesh Kumar</title>
             </Helmet>
            <p className="project m-4 p-4 text-center">Projects</p>
+           <input type="search" className="bg-transparent shadow-sm form-control" placeholder="Search Projects here..." onChange={(e)=>setSearch(e.target.value.toLowerCase())}/>
 
-            {projectList.map((projectslist)=>(
+            {filteredResult.map((projectslist)=>(
                 <div className="glass-effect row mx-auto my-4 shadow">
                 <div className="col-md-4 col-sm-12 col-xs-12">
                 <img src={projectslist.avatar} alt={projectslist.alt}/>    

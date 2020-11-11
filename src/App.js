@@ -15,7 +15,7 @@ import fav from './fav.png';
 
 function App() {
  
-const [darkMode,setDarkMode]=useState(false);
+const [darkMode,setDarkMode]=useState('');
 
 useEffect(()=>{
     const themeColor=localStorage.getItem('theme');

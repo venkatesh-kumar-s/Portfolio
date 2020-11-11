@@ -4,15 +4,15 @@ import {Link} from 'react-router-dom';
 import {FcMenu} from 'react-icons/fc';
 
 function Nav() {
-    const [dark,setDark]=useState();
+    const [dark,setDark]=useState(false);
 
     const themeToggle=()=>{
         if(dark){
-            localStorage.setItem('theme','light-theme');
+            localStorage.setItem('theme','dark-theme');
             setDark(false);
         }
         else{
-            localStorage.setItem('theme','dark-theme');
+            localStorage.setItem('theme','light-theme');
             setDark(true);
         }
     }
