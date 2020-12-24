@@ -6,8 +6,8 @@ function PersonalProjects() {
     const toggle = useSelector(state => state.dark);
     const projects=[
         {
-            title:"Table Tab Food Ordering System- Web App",
-            duration:"February, 2018-may, 2018",
+            title:"Table Tab Food Ordering System - Web App",
+            duration:"February, 2018 - may, 2018",
             desc:[
                 {info:"Responsive app created using Bootstrap, JavaScript, HTML & CSS."},
                 {info:"Use of Android Studio to convert webapp into android application."},
@@ -16,8 +16,8 @@ function PersonalProjects() {
             url:"https://netflix-clone-463dd.web.app/",
         },
         {
-            title:"Gallivanter- Tourism Website",
-            duration:"June, 2019-December, 2019",
+            title:"Gallivanter - Tourism Website",
+            duration:"June, 2019 - December, 2019",
             desc:[
                 {info:"Responsive app created using Bootstrap, JavaScript, HTML & CSS."},
                 {info:"Realized catalog page and designed the logic to allow the user to filter their searches."},
@@ -38,7 +38,7 @@ function PersonalProjects() {
             url:"https://netflix-clone-463dd.web.app/",
         },
         {
-            title:"Netflix-Clone, Online Streaming-Web App",
+            title:"Netflix - Clone, Online Streaming - Web App",
             duration:"August, 2020",
             desc:[
                 {info:"Created with React library and Redux for state management."},
@@ -49,7 +49,7 @@ function PersonalProjects() {
             url:"https://netflix-clone-463dd.web.app/",
         },
         {
-            title:"Periodic Table- Educational Web App",
+            title:"Periodic Table - Educational Web App",
             duration:"September, 2020",
             desc:[
                 {info:"Responsive app created using Bootstrap, JavaScript, HTML & CSS."},
@@ -69,14 +69,14 @@ function PersonalProjects() {
                     <p className="edu-text m-2 text-center">
                     <span className="text-primary">Personal Projects</span>
                     <br/>
-                    <span className="text-secondary">June, 2018-Aug, 2020</span>
+                    <span className="text-secondary">June, 2018 - Aug, 2020</span>
                     </p>
            </div>
 
            <div className="container col-xs-12 col-sm-12 col-md-8 p-4 text-justify">
                {projects.map((project)=>(
                     <div>
-                    <p>{project.title}, <i>{project.duration}</i><br/>
+                    <p>{project.title}, <i> {project.duration}</i><br/>
                     <span>
                     <ul className="mt-2">
                         {project.desc.map((sub)=>(

@@ -56,7 +56,12 @@ function Blog() {
                 <title>Blog | Venkatesh Kumar</title>
             </Helmet>
             <h1 className="m-4 p-4">Tech Blog</h1>
-            <input type="search" className="form-control shadow-sm bg-transparent" placeholder="Search Blogs here..." onChange={(e)=>setSearch(e.target.value.toLowerCase())}/>
+            
+            <input type="search" 
+            className="form-control shadow-sm bg-transparent" 
+            placeholder="Search Blogs here..." 
+            onChange={(e)=>setSearch(e.target.value.toLowerCase())}
+            />
 
             <div className="card-columns mt-5">
                    {filteredResult.map((blogs)=>

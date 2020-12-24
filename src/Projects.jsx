@@ -35,13 +35,13 @@ function Projects() {
             title:"Periodic Table of Elements",
             avatar:"https://magoosh.com/ged/files/2017/02/Screen-Shot-2017-02-07-at-10.27.24-PM-1024x600.png",
             alt:"Periodic Table of Elements",
-            desc:"This App allows you to place your food order in a restaurant by yourself without waiting for waiter to take your order.",
+            desc:"The periodic table, also known as the periodic table of elements, arranges the chemical elements such as hydrogen, silicon, iron, and uranium according to their recurring properties. The number of each element corresponds to the number of protons in its nucleus.",
             skills:[{info:'React'}, {info:'React Router'},{info:'ES6'},{info:'Express'},{info:'Mongo DB'},{info:'SASS'},{info:'Bootstrap'},{info:'Firebase'}],
         },
         {
             id:105,
             title:"Table Tab Food Ordering System",
-            avatar:"https://www.fabliantechnologies.com/wp-content/uploads/2018/10/Restaurant-Tablet-App-Offers.png",
+            avatar:"https://nibblematrix.com/wp-content/uploads/Food-System.png",
             alt:"Table Tab Food Ordering System",
             desc:"This App allows you to place your food order in a restaurant by yourself without waiting for waiter to take your order.",
             skills:[{info:'HTML5'}, {info:'CSS3'},{info:'Bootstrap4'},{info:'Javascript'}],
@@ -71,7 +71,7 @@ function Projects() {
                 </div>               
                 <p className="col-md-8 col-sm-12 col-xs-12 p-2 my-2 h3">{projectslist.title}<br/>
                 <hr/>
-                <span className="m-auto">{projectslist.desc}</span>
+                <span className="m-auto">{projectslist.desc} <a href="#">read more</a></span>
                 <br/>
                 
                 <Link className="btn btn-sm btn-link">View More</Link>

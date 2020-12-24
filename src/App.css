@@ -29,7 +29,7 @@
 .dark-mode .first-name{color: white;}
 .dark-mode .last-name{color: orange;}
 .dark-mode p,.dark-mode i{color:white;}
-.dark-mode hr{box-shadow: 0px 1px 1px -0.025px white;}
+.dark-mode hr{box-shadow: 0px 1px 1px -0.025px #00000040;}
 .dark-mode nav{background-color: black;}
 .dark-mode .nav-link,.dark-mode .navbar-brand{color: white;}
 .dark-mode .theme-toggle{color: white;border:auto solid white;}

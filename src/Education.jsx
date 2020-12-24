@@ -10,7 +10,7 @@ function Education() {
             avatar:`${lpu}`,
             alt:"lovely professional university",
             institute:"Lovely Professional University",
-            duration:"June, 2014-May, 2020",
+            duration:"June, 2014 - May, 2020",
             stream:"B.Tech, Computer Science and Engineering",
             grade:"First Class",
         },
@@ -18,7 +18,7 @@ function Education() {
             avatar:`${sc}`,
             alt:"sri chaitanya",
             institute:"Sri Chaitanya Educational Institutions",
-            duration:"June, 2014-May, 2020",
+            duration:"June, 2014 - May, 2020",
             stream:"XII (Mathematics, Physics, Chemistry)",
             grade:"92.4%",
         },
@@ -26,8 +26,8 @@ function Education() {
             avatar:`${navodaya}`,
             alt:"Jawahar Navodaya Vidyalaya",
             institute:"Jawahar Navodaya Vidyalaya",
-            duration:"June, 2011-April, 2012",
-            stream:"X- CBSE",
+            duration:"June, 2011 - April, 2012",
+            stream:"X - CBSE",
             grade:"92%",
         },
     ]
@@ -39,7 +39,7 @@ function Education() {
                     <p className="edu-text m-2 text-center">
                     <span className="text-primary">Education</span>
                     <br/>
-                    <span className="text-secondary">June, 2011-May, 2018</span>
+                    <span className="text-secondary">June, 2011 - May, 2018</span>
                     </p>
            </div>
 

@@ -12,7 +12,7 @@ function Home(){
             <div className="py-0 my-0 container">
                 <img className="my-avatar shadow" src={avatar} alt="venkatesh kumar"/>
            
-            <h1 className="full-name">
+            <h1 className="full-name mt-3 mb-0 pb-0">
                 <span className="first-name">Venkatesh Kumar</span>
                 &nbsp;
                 <span className="last-name">S.</span>
