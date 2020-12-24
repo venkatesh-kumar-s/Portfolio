@@ -1,25 +1,18 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './Nav.css';
 import {Link} from 'react-router-dom';
 import {FcMenu} from 'react-icons/fc';
+import {useSelector, useDispatch} from 'react-redux';
+import themeToggler from './actions'
 
 function Nav() {
-    const [dark,setDark]=useState(false);
-
-    const themeToggle=()=>{
-        if(dark){
-            localStorage.setItem('theme','dark-theme');
-            setDark(false);
-        }
-        else{
-            localStorage.setItem('theme','light-theme');
-            setDark(true);
-        }
-    }
-   
+ 
+    const toggle = useSelector(state => state.dark);
+    const dispatch = useDispatch();
+    
     return (
         <div>
-            <nav className="navbar navbar-expand-md fixed-top shadow-sm">
+            <nav className="navbar navbar-expand-md shadow-sm fixed-top">
               <div className="container">
                         <Link to="/" className="navbar-brand">Home</Link>
                     <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +25,10 @@ function Nav() {
                             <Link to="/blog" className="nav-item nav-link">Blog</Link>
                             <Link to="/projects" className="nav-item nav-link">Projects</Link>
                             <Link to="/resume" className="nav-item nav-link">Resume</Link>
-                            <button className="btn btn-outline-dark btn-sm py-0 m-2 theme-toggle" onClick={themeToggle}>{dark?"Light Mode":"Dark Mode"}</button>
+                            <button className="btn btn-outline-dark btn-sm py-0 m-2 theme-toggle" 
+                            onClick={()=>dispatch(themeToggler())}>
+                                {toggle?'Light Mode':'Dark Mode'}
+                                </button>
                         </div>    
                     </div>     
               </div>

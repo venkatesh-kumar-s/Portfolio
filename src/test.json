@@ -1,0 +1,17 @@
+[
+    {
+       "manufacturer":"KTM",
+       "model":"Duke 390",
+       "on-road-price":"2,50,000"
+    },
+    {
+        "manufacturer":"Royal Enfield",
+        "model":"Bullet",
+        "on-road-price":"1,50,000"
+     },
+     {
+        "manufacturer":"Kawasaki",
+        "model":"Ninja",
+        "on-road-price":"10,50,000"
+     }
+]

@@ -5,11 +5,18 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import * as serviceWorker from './serviceWorker';
+import {createStore} from 'redux';
+import ThemeToggle from './reducers/ThemeToggle';
+import {Provider} from 'react-redux';
 
+const store = createStore(
+  ThemeToggle, 
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  );
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 

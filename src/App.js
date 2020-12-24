@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import './App.css';
 import Footer from './Footer.jsx'
 import Main from './Main.jsx';
@@ -11,25 +11,20 @@ import Nav from './Nav';
 import NotFound from './NotFound';
 import {Helmet} from 'react-helmet';
 import fav from './fav.png';
+import Temp from './Temp';
+import ViewMore from './ViewMore';
+import {useSelector} from 'react-redux';
 
 
 function App() {
- 
-const [darkMode,setDarkMode]=useState('');
-
-useEffect(()=>{
-    const themeColor=localStorage.getItem('theme');
-    if(themeColor==='dark-theme')
-    {setDarkMode(true);}
-    else{setDarkMode(false);}
-},[darkMode]);
-
+  const theme = useSelector(state => state.dark);
   return (
-    <div className={`App ${darkMode? 'dark-mode': 'light-mode'}`}>
+    <div className={`${theme?'dark-mode App':'light-mode App'}`}>
       <Helmet>
-        <meta name="theme-color" content={`${darkMode?'#000000':'#90e0ef'}`}/>
         <link rel="icon" href={fav}/>
       </Helmet>
+    
+    
        <Router>
           <Nav/>
           <Switch>
@@ -38,9 +33,11 @@ useEffect(()=>{
             <Route path="/blog" component={Blog}/>
             <Route path="/projects" component={Projects}/>
             <Route path="/resume" component={Resume}/>
+            <Route path="/temp" component={Temp}/>
             <Route component={NotFound}/>
           </Switch>
       </Router>
+    
       <Footer/>
     </div>
   );

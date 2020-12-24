@@ -11,7 +11,7 @@ function Resume() {
             <Helmet>
                 <title>Resume | Venkatesh Kumar</title>
             </Helmet>
-             <p className="resume m-4 p-4 text-center">Resume <button className="btn btn-sm btn-outline-success" onClick={()=>window.open(resume)}>Download</button></p>
+             <h1 className="m-4 p-4 text-center">Resume <button className="btn btn-sm btn-outline-success" onClick={()=>window.open(resume)}>Download</button></h1>
              <PersonalProjects/>
              <hr/>
              <Education/>

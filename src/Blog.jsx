@@ -40,6 +40,7 @@ function Blog() {
             date:"2 July, 2020",
             content:"MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License."
         },
+        
     ];
     const [state,setState]=useState(data);
     const [search,setSearch]=useState('');

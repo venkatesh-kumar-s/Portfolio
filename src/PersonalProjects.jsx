@@ -1,7 +1,9 @@
 import React from 'react';
 import './Resume.css';
-
+import icon from './github-white.png'
+import { useSelector } from 'react-redux';
 function PersonalProjects() {
+    const toggle = useSelector(state => state.dark);
     const projects=[
         {
             title:"Table Tab Food Ordering System- Web App",
@@ -62,7 +64,7 @@ function PersonalProjects() {
     return (
         <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-4">
-                <img className="logo" src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="Personal Projects"/>
+                <img className="logo" src={`${toggle?icon:'https://image.flaticon.com/icons/png/512/25/25231.png'}`} alt="Personal Projects"/>
                 <br/>
                     <p className="edu-text m-2 text-center">
                     <span className="text-primary">Personal Projects</span>

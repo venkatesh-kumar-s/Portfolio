@@ -1,11 +1,14 @@
+
 .App {
   text-align: center;
   scroll-behavior: smooth;
+  transition: all 0.25s ease-in-out;
 }
 
 .navbar-toggler{
   outline: none !important;
 }
+
 
 /*dark mode & light mode */
 .light-mode{
