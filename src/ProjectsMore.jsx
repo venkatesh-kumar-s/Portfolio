@@ -11,7 +11,7 @@ function ProjectsMore() {
 
     return (
         <div className="container projects-more">
-            <h1>{data.title}</h1>
+            <h1 style={{fontWeight:400}}>{data.title}</h1>
             
             <div className="row text-center m-5 justify-content-center">
                 {data.skills.map((sub)=>(
@@ -20,8 +20,8 @@ function ProjectsMore() {
             </div>
 
             <div>
-                <button className="btn btn-dark m-2" onClick={()=>window.open(data.git_url)}>View on GitHub</button>
-                <button className="btn btn-primary m-2" onClick={()=>window.open(data.live_url)}>View Website</button>
+                <button className="btn btn-dark m-2 shadow" onClick={()=>window.open(data.git_url)}>View on GitHub</button>
+                <button className="btn btn-primary m-2 shadow" onClick={()=>window.open(data.live_url)}>View Website</button>
             </div>
 
            <hr/>
@@ -34,7 +34,20 @@ function ProjectsMore() {
            <hr/>
             
            <p className="text-left" style={{fontSize:25,fontWeight:500}}>Project Description</p>
-           <p className="text-justify" style={{fontWeight:400}}>{data.desc}</p>
+           <p className="text-justify" style={{fontWeight:400,fontSize:'medium'}}>{data.desc}</p>
+
+            <hr/>
+           <p className="text-left" style={{fontSize:25,fontWeight:500}}>Services and Features</p>
+
+            <hr/>
+           <div className="text-left">
+            <p style={{fontSize:25,fontWeight:500}}>Technical Overview</p>
+            <ol style={{listStyle:'none'}}>
+                {data.skills.map((res)=>(
+                    <li><strong style={{fontWeight:700}}>{res.info}</strong> : {res.use}</li>
+                ))}
+            </ol>
+           </div>
         </div>
     )
 }

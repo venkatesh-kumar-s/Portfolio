@@ -20,7 +20,8 @@
   transform: rotate(-30deg);
 }
 .node{
-  width: 10rem;
+  object-fit: contain;
+  width: 8rem;
   right: 2%;
   top: 30%;
   transform: rotate(-30deg);

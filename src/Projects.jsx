@@ -1,15 +1,13 @@
 import React,{useState} from 'react';
 import './Projects.css';
 import Helmet from 'react-helmet';
-import {Route, Link, BrowserRouter as Router, Switch, Redirect, useRouteMatch} from 'react-router-dom'
-import ViewMore from './ViewMore';
-import projectList from './ProjectsResource';
+import { Link } from 'react-router-dom'
+
 
 
 function Projects() {
     const projectList = [
         {
-            id:101,
             title:"Gallivanter - Booking App",
             avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSdi0v_De1bPFAZhaCe8MwOZIBHs-0x2JCSYg&usqp=CAU",
             alt:"gallivanter",
@@ -17,7 +15,6 @@ function Projects() {
             skills:[{info:'React'}, {info:'React Router'},{info:'ES6'},{info:'Express'},{info:'Mongo DB'},{info:'SASS'},{info:'Bootstrap'},{info:'Firebase'}],
         },
         {
-            id:102,
             title:"Weather App",
             avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvUc4t9anjkVxS4uZ7jb5iH8wlbebEBSYdkA&usqp=CAU",
             alt:"weather",
@@ -25,26 +22,23 @@ function Projects() {
             skills:[{info:'HTML5'}, {info:'CSS3'},{info:'Bootstrap4'},{info:'Javascript'}],
         },
         {
-            id:103,
             title:"Netflix Clone",
             avatar:"https://upload.wikimedia.org/wikipedia/en/f/f4/Netflix_-_English.jpg",
-            alt:"Netflix Clone",
+            alt:"netflix clone",
             desc:"This App allows you to place your food order in a restaurant by yourself without waiting for waiter to take your order.",
             skills:[{info:'React'}, {info:'React Router'},{info:'ES6'},{info:'Express'},{info:'Mongo DB'},{info:'SASS'},{info:'Bootstrap'},{info:'Firebase'}],
         },
     {
-            id:104,
             title:"Periodic Table of Elements",
             avatar:"https://magoosh.com/ged/files/2017/02/Screen-Shot-2017-02-07-at-10.27.24-PM-1024x600.png",
-            alt:"Periodic Table of Elements",
+            alt:"periodic table of elements",
             desc:"The periodic table, also known as the periodic table of elements, arranges the chemical elements such as hydrogen, silicon, iron, and uranium according to their recurring properties. The number of each element corresponds to the number of protons in its nucleus.",
             skills:[{info:'React'}, {info:'React Router'},{info:'ES6'},{info:'Express'},{info:'Mongo DB'},{info:'SASS'},{info:'Bootstrap'},{info:'Firebase'}],
         },
         {
-            id:105,
             title:"Table Tab Food Ordering System",
             avatar:"https://nibblematrix.com/wp-content/uploads/Food-System.png",
-            alt:"Table Tab Food Ordering System",
+            alt:"table tab food ordering system",
             desc:"This App allows you to place your food order in a restaurant by yourself without waiting for waiter to take your order.",
             skills:[{info:'HTML5'}, {info:'CSS3'},{info:'Bootstrap4'},{info:'Javascript'}],
         },
@@ -53,7 +47,6 @@ function Projects() {
 
     const [state, setState]=useState(projectList);
     const [search,setSearch]=useState('');
-    console.log(state);
 
     const filteredResult=state.filter(project=>(
         project.title.toLowerCase().indexOf(search)!==-1
@@ -77,7 +70,7 @@ function Projects() {
                 <span className="m-auto">{projectslist.desc} <a href="#">read more</a></span>
                 <br/>
                 
-                <Link to={`/projects/${projectslist.id}`} className="btn btn-sm btn-link">View More</Link>
+                <Link to={`/projects/${projectslist.alt}`} className="btn btn-sm btn-link">View More</Link>
               
                 <br/>
                 <div className="row text-center m-1">

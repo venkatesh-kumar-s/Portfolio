@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './App.css';
 import Footer from './Footer.jsx'
 import Main from './Main.jsx';
@@ -12,14 +12,17 @@ import NotFound from './NotFound';
 import Temp from './Temp';
 import {useSelector} from 'react-redux';
 import ProjectsMore from './ProjectsMore'
-import ViewMore from './ViewMore';
+import { Helmet } from 'react-helmet';
 
 
 function App() {
   const theme = useSelector(state => state.dark);
   return (
     <div className={`${theme?'dark-mode App':'light-mode App'}`}>
-    
+    <Helmet>
+      <meta name="theme-color" content={`${theme?'black':'#90e0ef'}`}/>
+    </Helmet>
+
        <Router>
           <Nav/>
           <Switch>
