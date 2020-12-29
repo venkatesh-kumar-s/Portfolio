@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { useLocation } from 'react-router-dom'
 
 function Temp() {
    const Bikes=[
@@ -10,6 +11,11 @@ function Temp() {
    ];
 
    const [bikesCopy,setBikes] = useState(Bikes);
+
+   const { search } = useLocation();
+   const result = new URLSearchParams(search);
+   
+   console.log(search);
    
    const handleChange=(index,event)=>{
      const values=[...bikesCopy];
@@ -19,6 +25,7 @@ function Temp() {
 
    const handleSubmit=(e)=>{
          e.preventDefault ();
+         result.set(e)
    }
 
    const handleAdd=()=>{
@@ -75,6 +82,13 @@ function Temp() {
                   onClick={handleSubmit}
                   >Submit</button>
                </form>
+
+
+
+                  {result.get('name')}
+
+
+
         </div>
     )
 }

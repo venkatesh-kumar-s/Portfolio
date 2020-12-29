@@ -3,9 +3,11 @@ import './Projects.css';
 import Helmet from 'react-helmet';
 import {Route, Link, BrowserRouter as Router, Switch, Redirect, useRouteMatch} from 'react-router-dom'
 import ViewMore from './ViewMore';
+import projectList from './ProjectsResource';
+
 
 function Projects() {
-    const projectList=[
+    const projectList = [
         {
             id:101,
             title:"Gallivanter - Booking App",
@@ -30,7 +32,7 @@ function Projects() {
             desc:"This App allows you to place your food order in a restaurant by yourself without waiting for waiter to take your order.",
             skills:[{info:'React'}, {info:'React Router'},{info:'ES6'},{info:'Express'},{info:'Mongo DB'},{info:'SASS'},{info:'Bootstrap'},{info:'Firebase'}],
         },
-        {
+    {
             id:104,
             title:"Periodic Table of Elements",
             avatar:"https://magoosh.com/ged/files/2017/02/Screen-Shot-2017-02-07-at-10.27.24-PM-1024x600.png",
@@ -46,11 +48,12 @@ function Projects() {
             desc:"This App allows you to place your food order in a restaurant by yourself without waiting for waiter to take your order.",
             skills:[{info:'HTML5'}, {info:'CSS3'},{info:'Bootstrap4'},{info:'Javascript'}],
         },
-    ]
+    
+    ];
 
     const [state, setState]=useState(projectList);
     const [search,setSearch]=useState('');
-    console.log(search);
+    console.log(state);
 
     const filteredResult=state.filter(project=>(
         project.title.toLowerCase().indexOf(search)!==-1
@@ -74,7 +77,7 @@ function Projects() {
                 <span className="m-auto">{projectslist.desc} <a href="#">read more</a></span>
                 <br/>
                 
-                <Link className="btn btn-sm btn-link">View More</Link>
+                <Link to={`/projects/${projectslist.id}`} className="btn btn-sm btn-link">View More</Link>
               
                 <br/>
                 <div className="row text-center m-1">

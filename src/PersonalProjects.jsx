@@ -35,7 +35,7 @@ function PersonalProjects() {
                 {info:"Implemented the AXIOS call that retrieves data from the OpenWeather API."},
                 {info:"Sign-In workflow with Firebase."}
             ],
-            url:"https://netflix-clone-463dd.web.app/",
+            url:"https://weather-f7ef4.web.app/",
         },
         {
             title:"Netflix - Clone, Online Streaming - Web App",
